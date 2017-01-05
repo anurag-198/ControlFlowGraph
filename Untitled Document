@@ -1,0 +1,19 @@
+else if(str.contains("/*") && str.contains("*/")){
+             // continue;
+              if(str.indexOf("/*") == 0){
+                continue;
+              }
+              else{
+                 String str1 = str.substring(0,str.indexOf("/*"));
+                  if(str1.trim().length() == 0){
+                      continue;
+                  }
+                
+                  pw.print(str1);
+                  pw.print("\n");
+              }
+          }
+          else if(str.contains("/*")) {
+              flag = 1;
+              continue;
+          }
